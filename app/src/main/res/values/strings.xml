@@ -15,6 +15,7 @@
     <string name="ST_ABBREV">State Abbreviation</string>
     <string name="TOTPOP_CY">2012 Total Population (Esri)</string>
     <string name="LANDAREA">Land Area in Square Miles</string>
+    <string name="measure">Measurement</string>
     <string name="addressSearchFailed">Address search failed</string>
     <string name="noResultsFound">No results found</string>
 </resources>

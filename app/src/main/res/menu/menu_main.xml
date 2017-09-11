@@ -8,6 +8,12 @@
         android:title="@string/action_search"
         android:icon="@android:drawable/ic_menu_search"
         app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/action_measure"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/measure"/>
 
     <group android:checkableBehavior="single">
         <item

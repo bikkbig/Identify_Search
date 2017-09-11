@@ -33,6 +33,7 @@ import com.esri.android.map.MapView;
 import com.esri.android.map.ags.ArcGISTiledMapServiceLayer;
 import com.esri.android.map.event.OnSingleTapListener;
 import com.esri.android.map.event.OnStatusChangedListener;
+import com.esri.android.toolkit.analysis.MeasuringTool;
 import com.esri.core.geometry.Envelope;
 import com.esri.core.geometry.Point;
 import com.esri.core.map.Graphic;
@@ -400,6 +401,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.Ocean_Basemap:
                 mMapView.setMapOptions(mOceansBasemap);
                 mOceansMenuItem.setChecked(true);
+                return true;
+            case R.id.action_measure:
+                startActionMode(new MeasuringTool(mMapView));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
