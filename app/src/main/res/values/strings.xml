@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Basemap</string>
+    <string name="action_settings">Settings</string>
+    <string name="StreetMapMenu">Streets</string>
+    <string name="TopoMenu">Topographic</string>
+    <string name="GrayMenu">Gray</string>
+    <string name="OceanMenu">Oceans</string>
+    <string name="action_search">Place Search</string>
+    <string name="search_hint">Search address or place</string>
+    <string name="menu_search">Search</string>
+    <string name="identify_task_url_for_avghouseholdsize">http://services.arcgisonline.com/arcgis/rest/services/Demographics/USA_Diversity_Index/MapServer</string>
+    <string name="address_search">Searching for Address</string>
+    <string name="NAME">Name</string>
+    <string name="ID">ID</string>
+    <string name="ST_ABBREV">State Abbreviation</string>
+    <string name="TOTPOP_CY">2012 Total Population (Esri)</string>
+    <string name="LANDAREA">Land Area in Square Miles</string>
+    <string name="addressSearchFailed">Address search failed</string>
+    <string name="noResultsFound">No results found</string>
+</resources>
