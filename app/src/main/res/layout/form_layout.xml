@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:text="Name"
+        android:layout_alignBaseline="@+id/editName"
+        android:layout_alignBottom="@+id/editName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/name"
+        android:layout_toRightOf="@+id/name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_alignBaseline="@+id/editEmail"
+        android:layout_alignBottom="@+id/editEmail"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editName"
+        android:layout_alignStart="@+id/editName"
+        android:layout_below="@+id/editName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/editEmail"
+        android:layout_marginTop="15dp"
+        android:text="Sex"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:layout_below="@+id/editDate"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date"
+        android:layout_marginTop="18dp"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/save"
+        android:layout_alignEnd="@+id/editSex"
+        android:layout_alignRight="@+id/editSex"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:text="cancel"/>
+
+    <Spinner
+        android:id="@+id/editSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sex"
+        android:layout_alignLeft="@+id/editEmail"
+        android:layout_alignStart="@+id/editEmail"
+        android:layout_alignRight="@+id/editEmail"
+        android:layout_alignEnd="@+id/editEmail"/>
+
+    <TextView
+        android:id="@+id/viewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="18sp"
+        android:layout_below="@+id/save"
+        android:layout_alignLeft="@+id/save"
+        android:layout_alignStart="@+id/save"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/viewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="18sp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/viewName"
+        android:layout_alignLeft="@+id/viewName"
+        android:layout_alignStart="@+id/viewName"/>
+
+    <TextView
+        android:id="@+id/viewSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex:"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/viewEmail"
+        android:layout_alignLeft="@+id/viewEmail"
+        android:layout_alignStart="@+id/viewEmail"/>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:layout_alignBaseline="@+id/editAge"
+        android:layout_alignBottom="@+id/editAge"
+        android:layout_alignLeft="@+id/sex"
+        android:layout_alignStart="@+id/sex"/>
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/editSex"
+        android:layout_alignLeft="@+id/editSex"
+        android:layout_alignStart="@+id/editSex"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_alignBaseline="@+id/editDate"
+        android:layout_alignBottom="@+id/editDate"
+        android:layout_alignLeft="@+id/age"
+        android:layout_alignStart="@+id/age"/>
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:clickable="true"
+        android:focusable="false"
+        android:layout_below="@+id/editAge"
+        android:layout_toRightOf="@+id/viewName"
+        android:layout_toEndOf="@+id/viewName"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/viewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewSex"
+        android:layout_alignStart="@+id/viewSex"
+        android:layout_below="@+id/viewSex"
+        android:layout_marginTop="15dp"
+        android:text="Age:"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/viewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewAge"
+        android:layout_alignStart="@+id/viewAge"
+        android:layout_below="@+id/viewAge"
+        android:layout_marginTop="18dp"
+        android:text="Date:"
+        android:textSize="18sp"/>
+
+
+
+</RelativeLayout>

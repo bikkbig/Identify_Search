@@ -17,4 +17,37 @@
         mapoptions.ZoomLevel="13"
         mapoptions.center="33.666354, -117.903557" />
 
+    <Button
+        android:id="@+id/geometrybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Geometry"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/geometrybutton"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/geometrybutton"
+        android:layout_toRightOf="@+id/geometrybutton"
+        android:text="Clear"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/clearbutton"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/clearbutton"
+        android:layout_toRightOf="@+id/clearbutton"
+        android:text=""/>
+
+
 </RelativeLayout>
